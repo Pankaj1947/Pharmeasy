@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmesy</title>
+    <title>PharmEasy</title>
+    <style>
+        #container{height: 400px;margin: auto;
+            display: grid;grid-template-rows:40px 320px;gap:30px;margin-bottom: 50px;}
+        #upper{justify-content: space-between;display: flex;}
+        #upper>div{height: 100%;width: 250px;justify-content: space-around;display: flex;}
+        #upper>div>div{display: flex;}
+        #healthArticles{display: grid;grid-template-columns: repeat(3,1fr);gap: 20px;
+            grid-template-rows: auto;line-height: 12px;color: gray;}
+        #image{width: 100%;border-radius: 10px;}
+        #readmore{color:#10847E;font-weight: bold;}
+
+        #container2{height: 300px;margin: auto;border: 1px solid red;margin-top: 50px;
+            display: grid;grid-template-rows:100%;grid-template-columns: repeat(4,1fr);gap:30px;}
+            #container2>div{border: 1px solid teal;}
+    </style>
 </head>
 <body>
-    <h1>Welcome to Pharmesy</h1>
+
+    <div id="container">
+        <div id="upper">
+            <div><h2>Health Articles</h2></div>
+            <div>
+                <div><h2>See All</h2></div>
+                <div><h2>-></h2></div>
+                <div><h2><-</h2></div>
+            </div>
+        </div>
+        <div id="healthArticles">
+            <div>
+                <img id="image" src="https://blog-images.pharmeasy.in/2022/02/21192247/BLOG-01.jpg?dim=0x230&dpr=1&q=100" alt="bestnasalspray">
+                <h4>First Nasal Spray To Treat COVID Patients In India Launched</h4>
+                <p>As the research on new treatment options for COVID-19 continues, the reports on the advancement and administration</p>
+                <p id="readmore">Read More ></p>
+            </div>
+            <div>
+                <img id="image" src="https://blog-images.pharmeasy.in/2022/02/21170136/Soap.jpg?dim=0x230&dpr=1&q=100" alt="bestbabyshop">
+                <h4>First Nasal Spray To Treat COVID Patients In India Launched</h4>
+                <p>As the research on new treatment options for COVID-19 continues, the reports on the advancement and administration</p>
+                <p id="readmore">Read More ></p>
+            </div>
+            <div>
+                <img id="image" src="https://blog-images.pharmeasy.in/2022/02/18210112/Mental-health-.jpg?dim=0x230&dpr=1&q=100" alt="mentalhealth">
+                <h4>First Nasal Spray To Treat COVID Patients In India Launched</h4>
+                <p>As the research on new treatment options for COVID-19 continues, the reports on the advancement and administration</p>
+                <p id="readmore">Read More ></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="container2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
