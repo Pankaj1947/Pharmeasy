@@ -9,138 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <style>
-         #navbar {
-        background-color: #10847e;
-        display: flex;
-        justify-content: space-around;
-        height: 100px;
-    }
-
-    #navbar * {
-        font-size: 18px;
-
-    }
-
-    #navbar>div {
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-    }
-
-    #mainlogo>div>img {
-        width: 70%;
-    }
-
-    /* #searchbar *{
-        padding: 10px;
-    } */
-    #searchbar {
-        width: 50%;
-    }
-
-    #searchbox {
-        width: 100%;
-
-    }
-
-    #searchbox>input {
-        width: 100%;
-        /* margin-left: -25px; */
-        border: none;
-        padding: 20px;
-
-    }
-
-    #searchbtn>button {
-        padding: 20px;
-    }
-
-    #pincodearea>select {
-        padding: 20px;
-        margin-right: -20px;
-    }
-
-    #logincart * {
-        color: white;
-        text-decoration: none;
-    }
-
-    /* #logincart {} */
-    #slider {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    #items>img {
-        display: none;
-        width: 100%;
-    }
-
-    #slider i {
-        font-size: 40px;
-    }
-        #container {
-            height: 400px;
-            margin: auto;
-            display: grid;
-            grid-template-rows: 40px 320px;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        #upper {
-            justify-content: space-between;
-            display: flex;
-        }
-
-        #upper>div {
-            height: 100%;
-            width: 250px;
-            justify-content: space-around;
-            display: flex;
-        }
-
-        #upper>div>div {
-            display: flex;
-        }
-
-        #healthArticles {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            grid-template-rows: auto;
-            line-height: 12px;
-            color: gray;
-        }
-
-        #image {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        #readmore {
-            color: #10847E;
-            font-weight: bold;
-        }
-
-        #container2 {
-            height: 300px;
-            margin: auto;
-            border: 1px solid red;
-            margin-top: 50px;
-            display: grid;
-            grid-template-rows: 100%;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-
-        #container2>div {
-            border: 1px solid teal;
-        }
-    </style>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body>
@@ -148,7 +17,7 @@
         <div id="mainlogo">
             <div>
                 <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
-    
+
             </div>
         </div>
         <div id="searchbar">
@@ -185,8 +54,10 @@
             <img src="https://cms-contents.pharmeasy.in/banner/ff62f53c2ba-GRAND25DWEB.jpg" alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/48a1439746f-EASY400.jpg" alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/60fb9bbcf9a-DWEB.jpg?dim=1440x0&dpr=1&q=100" alt="">
-            <img src="https://cms-contents.pharmeasy.in/banner/c779a38822e-Loss_Dweb_.jpg?dim=1440x0&dpr=1&q=100" alt="">
-            <img src="https://cms-contents.pharmeasy.in/banner/b06a67e4fc7-Sarva_dWeb.jpg?dim=1440x0&dpr=1&q=100" alt="">
+            <img src="https://cms-contents.pharmeasy.in/banner/c779a38822e-Loss_Dweb_.jpg?dim=1440x0&dpr=1&q=100"
+                alt="">
+            <img src="https://cms-contents.pharmeasy.in/banner/b06a67e4fc7-Sarva_dWeb.jpg?dim=1440x0&dpr=1&q=100"
+                alt="">
             <img src="https://cms-contents.pharmeasy.in/banner/dd96b2e3812-Yoga_Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="">
         </div>
         <div id="nextbtn"><i class="fa fa-arrow-right"></i></div>
@@ -250,43 +121,4 @@
 </body>
 
 </html>
-<script>
-    
-        var item = 1
-        document.querySelector("#prevbtn").addEventListener('click', prev)
-        document.querySelector("#nextbtn").addEventListener('click', next)
-
-
-        function prev() {
-            var items = document.querySelectorAll("#items > img");
-            if (item == 1) {
-                item = items.length
-            } else {
-                item--
-            }
-            runslider()
-        }
-
-        function next() {
-            var items = document.querySelectorAll("#items > img");
-            if (item == items.length) {
-                item = 1
-            } else {
-                item++
-            }
-            runslider()
-        }
-        function runslider() {
-            var items = document.querySelectorAll("#items > img");
-            for (var i = 0; i < items.length; i++) {
-                if (i + 1 == item) {
-                    items[i].style.display = "block"
-                } else {
-                    items[i].style.display = "none";
-                }
-            }
-
-        }
-        runslider()
-        setInterval(next, 3000);
-</script>
+<script src="./jsfile/index.js"></script>
