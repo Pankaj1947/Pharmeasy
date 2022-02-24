@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debit Card Page</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        width: 80%;
+        margin: auto;
+        border: 1px solid red;
+        height: 500px;gap: 100px;
+      }
+    #container>div{border: 1px solid green;display: grid;grid-template-rows: 50px 100px 100px 100px 100px;}
+    #container>div>div{border: 1px solid black;}
+    .wallets{display: grid;grid-template-columns: 1fr 7fr;}
+    .wallets>div{border: 1px solid green;}
+    .wallets>div>img{width: 70%;margin-top: 10px;}
+    .walletselect{display: flex;justify-content: space-between;}
+    .walletselect>div{border: 1px solid blue;}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+        <div>
+            <div>Offers</div>
+            <div class="wallets">
+                <div><img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="paytm"></div>
+                <div class="walletselect">
+                    <div>paytm wallet</div>
+                    <div>circle tick</div>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+  </body>
+</html>
+<script></script>
