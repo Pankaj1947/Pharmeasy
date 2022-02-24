@@ -1,0 +1,153 @@
+#navbar {
+  background-color: #10847e;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+}
+#mainlogo > img {
+  height: 70%;
+  margin-top: 4%;
+}
+#searchbar {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  right: 2%;
+  justify-content: center;
+  /* border: 6px solid red; */
+}
+#searchbar > input {
+  position: relative;
+  right: 20px;
+  width: 60%;
+  padding: 11px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
+
+  /* border: 5px solid black */
+}
+#searchbar > select {
+  width: 33%;
+  padding: 9px;
+  border-radius: 5px;
+  border-color: white;
+  outline: none;
+  font-size: 13px;
+  margin-left: 15px;
+}
+#searchbar > button {
+  width: 5%;
+  position: absolute;
+  right: 5%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+#logincart {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+#logincart > div:nth-child(3) {
+  margin-left: 15px;
+}
+#belownavbar {
+  display: flex;
+  justify-content: center;
+  background-color: #10847e;
+  
+}
+#belownavbar > a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+#slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#prevbtn {
+  position: absolute;
+}
+#nextbtn {
+  position: absolute;
+  right: 10px;
+}
+
+#items > img {
+  display: none;
+  width: 100%;
+}
+
+#slider i {
+  font-size: 40px;
+  color: rgb(201, 189, 189);
+}
+
+#loginpage {
+  height: 600px;
+  width: 300px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+#logintop {
+  background-color: #10847e;
+  padding: 20px;
+  display: flex;
+}
+#logintop button{
+  position: absolute;
+  left: -40px;
+  background-color: #10847e;
+  width: 50px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  border: none;
+  opacity:1 !important;
+}
+
+#logintop > img {
+  width: 50%;
+}
+#loginbottom {
+  padding: 10px;
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+}
+#loginbottom label {
+  display: block;
+  margin-bottom: 10px;
+}
+#loginbottom input {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+}
+#loginbottom p {
+  font-size: 10px;
+  text-align: justify;
+}
+#continuepart {
+  background-color: #10847e;
+  color: white;
+  font-weight: 500;
+}
+
