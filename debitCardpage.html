@@ -6,39 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Debit Card Page</title>
     <style>
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;color: #4F585E;
+      }
       #container {
         display: grid;
         grid-template-columns: 3fr 2fr;
         width: 80%;
         margin: auto;
-        border: 1px solid red;
-        height: 500px;gap: 100px;
+        /* border: 1px solid red; */
+        height: 500px;
+        gap: 100px;
       }
-    #container>div{border: 1px solid green;display: grid;grid-template-rows: 50px 100px 100px 100px 100px;}
-    #container>div>div{border: 1px solid black;}
-    .wallets{display: grid;grid-template-columns: 1fr 7fr;}
-    .wallets>div{border: 1px solid green;}
-    .wallets>div>img{width: 70%;margin-top: 10px;}
-    .walletselect{display: flex;justify-content: space-between;}
-    .walletselect>div{border: 1px solid blue;}
+      #container > div {
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-rows: 50px 100px 100px 100px 100px;
+      }
+      .wallets {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+      }
+      .wallets > div > img {
+        width: 70%;
+        margin-top: 10px;
+      }
+      .walletselect {
+        display: flex;
+        justify-content: space-between;
+      }
+      .walletselect > div {
+        height: 30%;
+      }
+      .walletHeadings{font-weight: bold;}
+      .offerconditions{font-size: 12px;}
+      #offers{font-size: 30px;font-weight: bold;}
     </style>
   </head>
   <body>
     <div id="container">
-        <div>
-            <div>Offers</div>
-            <div class="wallets">
-                <div><img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="paytm"></div>
-                <div class="walletselect">
-                    <div>paytm wallet</div>
-                    <div>circle tick</div>
-                </div>
+      <div>
+        <div id="offers">Offers</div>
+        <div class="wallets">
+          <div>
+            <img
+              src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png"
+              alt="paytm"
+            />
+          </div>
+          <div>
+            <div class="walletselect">
+              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div><input id="radio1" type="radio" /></div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <p class="offerconditions">
+                Get 4000 cashback points on minimum transaction of Rs.999. Offer
+                applicable on first Paytm wallet or Paytm Postpaid transaction
+                on Pharmeasy
+              </p>
+            </div>
+            <hr>
+          </div>
         </div>
-        <div></div>
+        <div class="wallets">
+          <div>
+            <img
+              src="https://cdn.pharmeasy.in/payments/amazonpay_new.png"
+              alt="amazonpay"
+            />
+          </div>
+          <div>
+            <div class="walletselect">
+              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div><input id="radio1" type="radio" /></div>
+            </div>
+            <div>
+              <p class="offerconditions">
+                Get 4000 cashback points on minimum transaction of Rs.999. Offer
+                applicable on first Paytm wallet or Paytm Postpaid transaction
+                on Pharmeasy
+              </p>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="wallets">
+          <div>
+            <img
+              src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png"
+              alt="phonepe"
+            />
+          </div>
+          <div>
+            <div class="walletselect">
+              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div><input id="radio1" type="radio" /></div>
+            </div>
+            <div>
+              <p class="offerconditions">
+                Get 4000 cashback points on minimum transaction of Rs.999. Offer
+                applicable on first Paytm wallet or Paytm Postpaid transaction
+                on Pharmeasy
+              </p>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="wallets">
+          <div>
+            <img
+              src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png"
+              alt="mobikwik"
+            />
+          </div>
+          <div>
+            <div class="walletselect">
+              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div><input id="radio1" type="radio" /></div>
+            </div>
+            <div>
+              <p class="offerconditions">
+                Get 4000 cashback points on minimum transaction of Rs.999. Offer
+                applicable on first Paytm wallet or Paytm Postpaid transaction
+                on Pharmeasy
+              </p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div></div>
     </div>
   </body>
 </html>
