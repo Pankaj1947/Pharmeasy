@@ -1,0 +1,104 @@
+body{
+    font-family: Open Sans,sans-serif;
+    color: #4f585e;
+}
+
+.pay-icons {
+    display: flex;
+}
+
+.pay-icons > div > img {
+    width: 75%;
+    height: 38px;
+    margin-right: 18px;
+}
+
+.flexone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.payHead {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    word-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.copyrights {
+    font-size: 20px
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-col > .cols {
+    width: 20%;
+}
+
+.acls{
+    text-decoration: none;
+    font-family: Open Sans,sans-serif;
+    color: #4f585e;
+    line-height: 1.25;
+}
+.topics {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.topic-heading {
+    color: #4f585e;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.topic-box {
+    margin-bottom: 38px;
+}
+.icon-flex {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lastline{
+    margin-bottom: 80px;
+}
+
+.followbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.followheading{
+    color: #4f585e;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.followicons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.followicons > div {
+   padding-bottom: 10px;
+   padding-top: 10px;
+   width: 50px;
+   color:white;
+   background-color: #10847e;
+   text-align: center;
+   border-radius:50%;
+}
+
+.followicons > div > i {
+   font-size: 30px;
+}
