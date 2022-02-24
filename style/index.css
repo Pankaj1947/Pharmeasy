@@ -1,132 +1,154 @@
+#navbar {
+  background-color: #10847e;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  position: sticky;
+  top:0px;
+}
+#mainlogo > img {
+  height: 70%;
+  margin-top: 4%;
+}
+#searchbar {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  right: 2%;
+  justify-content: center;
+  /* border: 6px solid red; */
+}
+#searchbar > input {
+  position: relative;
+  right: 20px;
+  width: 60%;
+  padding: 11px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 12px;
 
-        #navbar {
-            background-color: #10847e;
-            display: flex;
-            justify-content: space-around;
-            height: 100px;
-        }
+  /* border: 5px solid black */
+}
+#searchbar > select {
+  width: 33%;
+  padding: 9px;
+  border-radius: 5px;
+  border-color: white;
+  outline: none;
+  font-size: 13px;
+  margin-left: 15px;
+}
+#searchbar > button {
+  width: 5%;
+  position: absolute;
+  right: 5%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+#logincart {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+#logincart > div:nth-child(3) {
+  margin-left: 15px;
+}
+#belownavbar {
+  display: flex;
+  justify-content: center;
+  background-color: #10847e;
+}
+#belownavbar > a {
+  text-decoration: none;
+  color: white;
+  margin-left:10px;
+  padding: 10px;
+}
 
-        #navbar * {
-            font-size: 18px;
 
-        }
+#slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        #navbar>div {
-            display: flex;
-            /* justify-content: space-between; */
-            align-items: center;
-        }
+#prevbtn {
+  position: absolute;
+}
+#nextbtn {
+  position: absolute;
+  right: 10px;
+}
 
-        #mainlogo>div>img {
-            width: 70%;
-        }
+#items > img {
+  display: none;
+  width: 100%;
+}
 
-        /* #searchbar *{
-        padding: 10px;
-    } */
-        #searchbar {
-            width: 50%;
-        }
+#slider i {
+  font-size: 40px;
+  color: rgb(201, 189, 189);
+}
 
-        #searchbox {
-            width: 100%;
+#container {
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 40px 320px;
+  gap: 30px;
+  margin-bottom: 50px;
+}
 
-        }
+#upper {
+  justify-content: space-between;
+  display: flex;
+}
 
-        #searchbox>input {
-            width: 100%;
-            /* margin-left: -25px; */
-            border: none;
-            padding: 20px;
+#upper > div {
+  height: 100%;
+  width: 250px;
+  justify-content: space-around;
+  display: flex;
+}
 
-        }
+#upper > div > div {
+  display: flex;
+}
 
-        #searchbtn>button {
-            padding: 20px;
-        }
+#healthArticles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: auto;
+  line-height: 12px;
+  color: gray;
+}
 
-        #pincodearea>select {
-            padding: 20px;
-            margin-right: -20px;
-        }
+#image {
+  width: 100%;
+  border-radius: 10px;
+}
 
-        #logincart * {
-            color: white;
-            text-decoration: none;
-        }
+#readmore {
+  color: #10847e;
+  font-weight: bold;
+}
 
-        /* #logincart {} */
-        #slider {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-        }
+#container2 {
+  height: 300px;
+  margin: auto;
+  border: 1px solid red;
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
 
-        #items>img {
-            display: none;
-            width: 100%;
-        }
-
-        #slider i {
-            font-size: 40px;
-        }
-
-        #container {
-            height: 400px;
-            margin: auto;
-            display: grid;
-            grid-template-rows: 40px 320px;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        #upper {
-            justify-content: space-between;
-            display: flex;
-        }
-
-        #upper>div {
-            height: 100%;
-            width: 250px;
-            justify-content: space-around;
-            display: flex;
-        }
-
-        #upper>div>div {
-            display: flex;
-        }
-
-        #healthArticles {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            grid-template-rows: auto;
-            line-height: 12px;
-            color: gray;
-        }
-
-        #image {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        #readmore {
-            color: #10847E;
-            font-weight: bold;
-        }
-
-        #container2 {
-            height: 300px;
-            margin: auto;
-            border: 1px solid red;
-            margin-top: 50px;
-            display: grid;
-            grid-template-rows: 100%;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-
-        #container2>div {
-            border: 1px solid teal;
-        }
+#container2 > div {
+  border: 1px solid teal;
+}
