@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebitCardFormPage</title>
+    <style>
+        #container{display: grid;grid-template-rows:180px 50px 50px 150px 40px 45px 45px 45px;border: 1px solid green;height: 600px;width: 30%;margin: auto;}
+        #container>div{border: 1px solid red;width: 85%;justify-content: center;margin: auto;height: 100%;}
+        #validity,#validityInput,#checkbox{display: grid;grid-template-columns: 100px 60px;gap: 50px;border: 1px solid teal;}
+        #validity>div{border: 1px solid blue;text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h3>Enter New Card</h3>
+            <hr/>
+            <p>Card Number</p>
+            <input type="number" placeholder="1234-5678-9876-5432">
+        </div>
+        <div id="validity">
+            <p>Valid Through</p>
+            <p>CVV</p>
+        </div>
+        <div id="validityInput">
+            <input type="text" placeholder="MM/YY">
+            <input type="password" placeholder="123">
+        </div>
+        <div>
+            <p>Name on Card</p>
+            <input type="text" placeholder="e.g. Ravi Kumar">
+        </div>
+        <div>
+            <div id="checkbox">
+                <input type="checkbox">
+                <p>save this card for</p>
+            </div>
+            <div></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
