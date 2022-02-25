@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>Debit Card Page</title>
     <style>
       * {
@@ -13,24 +12,46 @@
         color: #4f585e;
       }
 
-      #navbar{height: 100px;width: 100%;border: 1px solid;background-color: #10847E;margin-bottom: 20px;
-      display: grid;grid-template-columns: 200px 300px;justify-content: space-around;}
-      #navbar>div{border: 1px solid blue;}
+      #navbar {
+        height: 100px;
+        width: 100%;
+        border: 1px solid;
+        background-color: #10847e;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 200px 300px;
+        justify-content: space-around;
+      }
       #mainlogo > img {
-  height: 45%;
-  margin-top: 10%;
-}
+        height: 45%;
+        margin-top: 10%;
+        cursor: pointer;
+      }
+      #navbarRight {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        padding-top: 11%;
+      }
+      #secure {
+        font-weight: 500;
+        color: white;
+        font-size: 18px;
+      }
+      #shieldlogo {
+        height: 30px;
+        width: 33px;
+      }
       #container {
         display: grid;
         grid-template-columns: 3fr 2fr;
         width: 78%;
         margin: auto;
-        border: 1px solid red;
-        height: 500px;
+        /* border: 1px solid red; */
+        height: 450px;
         gap: 100px;
       }
-      #container > div {
-        border: 1px solid green;
+      #leftContainer {
+        /* border: 1px solid green; */
         display: grid;
         grid-template-rows: 50px 100px 100px 100px 100px;
       }
@@ -38,45 +59,129 @@
         display: grid;
         grid-template-columns: 1fr 7fr;
       }
-      .wallets > div > img {
+      .wallets > div > img,
+      .firstbox > div > img {
         width: 70%;
         margin-top: 10px;
       }
-      .walletselect {
+      .walletselect,
+      .upiselect {
         display: flex;
         justify-content: space-between;
       }
       .walletselect > div {
         height: 30%;
       }
-      .walletHeadings {
+      .walletHeadings,
+      .upiHeadings {
         font-weight: bold;
       }
       .offerconditions {
         font-size: 12px;
       }
-      #offers {
+      #offers,
+      #OtherOptions {
         font-size: 30px;
         font-weight: bold;
+      }
+      #rightContainer {
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        /* border: 1px solid blue; */
+        gap: 10px;
+      }
+      #peWallet {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        align-items: center;
+        line-height: 1px;
+        gap: 10px;
+        background-color: #f2fff8;
+        border-radius: 5px;
+      }
+      #tAndc {
+        font-size: 13px;
+        color: #10847e;
+      }
+      #checkbox {
+        margin-left: 40px;
+      }
+      #priceDetails {
+        display: grid;
+        grid-template-rows: repeat(5, 50px);
+      }
+      #priceDetails > div {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bigletter {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .moneyshow {
+        display: flex;
+        gap: 5px;
+      }
+      .realPrice{font-weight: 600;}
+      .strikedOff{text-decoration: line-through;font-size: 14px;margin-top: 3px;}
+      #totalSavings {
+        border: 1px dashed #10847e;
+        align-items: center;
+        background-color: #f2fff8;
+        border-radius: 7px;
+      }
+      #container2 {
+        width: 42%;
+        margin-left: 11%;
+        display: grid;
+        grid-template-rows: 50px 100px 100px 100px 70px 70px;
+      }
+      .firstbox {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+      }
+      /* .firstbox>div{border: 1px solid red;} */
+      .arrowButton {
+        color: #10847e;
+        font-weight: 900;
+        border: 0px;
+        background-color: white;
+      }
+      .upiselect {
+        line-height: 40px;
+      }
+      .imagePercentage {
+        width: 8%;
+        margin-right: 5px;
+      }
+      #secondlast,
+      #lastone {
+        margin-bottom: -20px;
       }
     </style>
   </head>
   <body>
     <div id="navbar">
       <div id="mainlogo">
-            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+        <img
+          src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"
+          alt=""
+        />
       </div>
-      <div>
-        <i class="fas fa-shield-check"></i>
+      <div id="navbarRight">
+        <div>
+          <img
+            id="shieldlogo"
+            src="https://scontent.fccu14-1.fna.fbcdn.net/v/t39.30808-6/274790085_385340246738999_3277763621692311496_n.png?stp=cp0_dst-png&_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=AzzezAhGPlMAX_EdlY1&_nc_ht=scontent.fccu14-1.fna&oh=00_AT_NcUaPeLQ-D8RKFuGCFilqiTZRXCE-f5srp-JrNzNwcw&oe=621DA44B"
+            alt="Shieldlogo"
+          />
+        </div>
+        <div id="secure">100% Secure Payments</div>
       </div>
     </div>
 
-
-
-
-
     <div id="container">
-      <div>
+      <div id="leftContainer">
         <div id="offers">Offers</div>
         <div class="wallets">
           <div>
@@ -109,14 +214,13 @@
           </div>
           <div>
             <div class="walletselect">
-              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div class="walletHeadings">Amazon Pay</div>
               <div><input id="radio1" type="radio" /></div>
             </div>
             <div>
               <p class="offerconditions">
-                Get 4000 cashback points on minimum transaction of Rs.999. Offer
-                applicable on first Paytm wallet or Paytm Postpaid transaction
-                on Pharmeasy
+                Get up to Rs.500 cashback on a minimum transaction of Rs.100 via
+                Amazon Pay.
               </p>
             </div>
             <hr />
@@ -131,14 +235,13 @@
           </div>
           <div>
             <div class="walletselect">
-              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div class="walletHeadings">PhonePe</div>
               <div><input id="radio1" type="radio" /></div>
             </div>
             <div>
               <p class="offerconditions">
-                Get 4000 cashback points on minimum transaction of Rs.999. Offer
-                applicable on first Paytm wallet or Paytm Postpaid transaction
-                on Pharmeasy
+                Get a Scratch card and win up to Rs.750 cashback on a minimum
+                transaction of Rs.500 via PhonePe wallet only.
               </p>
             </div>
             <hr />
@@ -153,22 +256,216 @@
           </div>
           <div>
             <div class="walletselect">
-              <div class="walletHeadings">Paytm Wallet | Postpaid</div>
+              <div class="walletHeadings">Mobikwik</div>
               <div><input id="radio1" type="radio" /></div>
             </div>
             <div>
               <p class="offerconditions">
-                Get 4000 cashback points on minimum transaction of Rs.999. Offer
-                applicable on first Paytm wallet or Paytm Postpaid transaction
-                on Pharmeasy
+                Get up to Rs.500 cashback on a minimum transaction of Rs.500 via
+                Mobikwik Wallet. Use code MBK500 on Mobikwik.
               </p>
             </div>
             <hr />
           </div>
         </div>
       </div>
-      <div></div>
+      <div id="rightContainer">
+        <div id="peWallet">
+          <div>
+            <img
+              src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>PharmEasy Wallet</h4>
+            <p id="tAndc">T&C Apply</p>
+          </div>
+          <div></div>
+          <div>
+            <input id="checkbox" type="checkbox" />
+          </div>
+        </div>
+        <div id="priceDetails">
+          <div class="bigletter">Price Breakdown</div>
+          <div>
+            <div>Cart Value</div>
+            <div class="moneyshow">
+              <div class="strikedOff">₹165.00</div>
+              <div class="realPrice">₹140.25</div>
+            </div>
+          </div>
+          <div>
+            <div>Delivery Charge</div>
+            <div class="moneyshow">
+              <div class="strikedOff">₹85.00</div>
+              <div class="realPrice">₹75.00</div>
+            </div>
+          </div>
+          <div>
+            <div class="bigletter">Amount to be paid</div>
+            <div class="realPrice">₹215.25</div>
+          </div>
+          <div id="totalSavings">
+            <p>Total Savings of on this order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container2">
+      <div id="OtherOptions">Other Options</div>
+      <div class="firstbox">
+        <div>
+          <img src="https://cdn.pharmeasy.in/payments/upi.png" alt="upi" />
+        </div>
+        <div>
+          <div class="upiselect">
+            <div class="upiHeadings">UPI</div>
+            <div><button class="arrowButton">&gt;</button></div>
+          </div>
+          <div>
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/gpay.png"
+              alt="gpay"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/bhim.png"
+              alt="bhim"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png"
+              alt="paytm"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png"
+              alt="phonepe"
+            />
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="firstbox">
+        <div>
+          <img
+            src="https://cdn.pharmeasy.in/payments/wallet.png"
+            alt="wallet"
+          />
+        </div>
+        <div>
+          <div class="upiselect">
+            <div class="upiHeadings">Wallets</div>
+            <div><button class="arrowButton">&gt;</button></div>
+          </div>
+          <div>
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/amazonpay.png"
+              alt="amazonpay"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png"
+              alt="paytm"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/freecharge-wallet.png"
+              alt="freecharge-wallet"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png"
+              alt="phonepe"
+            />
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="firstbox">
+        <div>
+          <img src="https://cdn.pharmeasy.in/payments/card.png" alt="card" />
+        </div>
+        <div>
+          <div class="upiselect">
+            <div id="creditAndDebitCard" class="upiHeadings">
+              Credit/Debit Card
+            </div>
+            <div><button class="arrowButton">&gt;</button></div>
+          </div>
+          <div>
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png"
+              alt="visa"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png"
+              alt="mastercard-logo"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png"
+              alt="rupay"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png"
+              alt="maestro-logo"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png"
+              alt="dinerCard"
+            />
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="firstbox">
+        <div>
+          <img
+            src="https://cdn.pharmeasy.in/payments/netbanking.png"
+            alt="netbanking"
+          />
+        </div>
+        <div>
+          <div id="secondlast" class="upiselect">
+            <div class="upiHeadings">Net Banking</div>
+            <div><button class="arrowButton">&gt;</button></div>
+          </div>
+          <div>
+            <p>We support over 100 banks</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="firstbox">
+        <div>
+          <img src="https://cdn.pharmeasy.in/payments/card.png" alt="card" />
+        </div>
+        <div>
+          <div id="lastone" class="upiselect">
+            <div class="upiHeadings">Cash on Delivery</div>
+            <div><input type="radio" /></div>
+          </div>
+          <div>
+            <p>Pay via cash/UPI at the time of delivery</p>
+          </div>
+          <hr />
+        </div>
+      </div>
     </div>
   </body>
 </html>
-<script></script>
+<script>
+  document
+    .querySelector("#creditAndDebitCard")
+    .addEventListener("click", submitFun);
+  function submitFun() {}
+</script>
