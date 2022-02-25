@@ -1,0 +1,24 @@
+#slider {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #prevbtn {
+    position: absolute;
+    left: 375px;
+  }
+  
+  #items > img {
+    display: none;
+    width: 100%;
+  }
+  
+  #slider i {
+    font-size: 30px;
+    border-radius:50%;
+    color: white;
+    background-color: #10847e;;
+  }
