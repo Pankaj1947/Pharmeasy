@@ -1,231 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PharmEasy</title>
-    <style>
-      * {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      }
-      #pankajContainer {
-        height: 400px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: 40px 320px;
-        gap: 30px;
-        margin-bottom: 50px;
-      }
-      #Pankajupper {
-        justify-content: space-between;
-        display: flex;
-      }
-      #Pankajupper > div {
-        height: 100%;
-        width: 250px;
-        justify-content: space-around;
-        display: flex;
-      }
-      #Pankajupper > div > div {
-        display: flex;
-      }
-      #healthArticles {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        grid-template-rows: auto;
-        line-height: 15px;
-        color: gray;
-      }
-      #healthArticles > div {
-        cursor: pointer;
-      }
-      .pankajimage {
-        width: 100%;
-        border-radius: 7px;
-      }
-      .readmore,
-      #seeall {
-        color: #10847e;
-        font-weight: bold;
-      }
 
-      #pankajContainer2 {
-        height: 300px;
-        margin: auto;
-        margin-top: 50px;
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: repeat(4, 1fr);
-      }
-      #pankajContainer2 > div {
-        line-height: 20px;
-        cursor: pointer;
-      }
-      .pankajimage2 {
-        width: 50%;
-      }
-      .million {
-        font-size: 45px;
-        font-weight: bold;
-        color: #4f585e;
-      }
-      .Registeredusers {
-        color: #4f585e;
-        font-size: 20px;
-      }
-      #pankajContainer3 {
-        height: 280px;
-        margin: auto;
-        margin-top: 50px;
-        background-color: #f2f5f5;
-        justify-content: space-between;
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .pankajbuttons {
-        border: 0px;
-        font-weight: 900;
-        background-color: white;
-        margin-top: 25px;
-        cursor: pointer;
-      }
-      #pankajhealth {
-        color: grey;
-      }
-      #pankajContainer3 > div {
-        line-height: 20px;
-      }
-      #playstore {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: right;
-        width: 350px;
-        height: 50px;
-        gap: 20px;
-      }
-      #googleplay,
-      #appstore {
-        width: 100%;
-      }
-      #impactinglives {
-        font-size: 28px;
-        font-weight: bold;
-        color: #4f585e;
-        margin-top: 80px;
-      }
-      #impactinglives ~ p {
-        font-size: 28px;
-        font-weight: bold;
-        color: #4f585e;
-      }
-      #phoneimage {
-        margin-left: 200px;
-      }
-      #phoneimage > img {
-        height: 100%;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div id="pankajContainer">
-      <div id="Pankajupper">
-        <div><h2 id="pankajhealth">Health Articles</h2></div>
-        <div>
-          <div><h2 id="seeall">See All</h2></div>
-          <div><button class="pankajbuttons">&lt;</button></div>
-          <div><button class="pankajbuttons">&gt;</button></div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmEasy</title>
+  <style>
+    * {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    #pankajContainer {
+      height: 400px;
+      margin: auto;
+      display: grid;
+      grid-template-rows: 40px 320px;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    #Pankajupper {
+      justify-content: space-between;
+      display: flex;
+    }
+
+    #Pankajupper>div {
+      height: 100%;
+      width: 250px;
+      justify-content: space-around;
+      display: flex;
+    }
+
+    #Pankajupper>div>div {
+      display: flex;
+    }
+
+    #healthArticles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      grid-template-rows: auto;
+      line-height: 15px;
+      color: gray;
+    }
+
+    #healthArticles>div {
+      cursor: pointer;
+    }
+
+    .pankajimage {
+      width: 100%;
+      border-radius: 7px;
+    }
+
+    .readmore,
+    #seeall {
+      color: #10847e;
+      font-weight: bold;
+    }
+
+    #pankajContainer2 {
+      height: 300px;
+      margin: auto;
+      margin-top: 50px;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    #pankajContainer2>div {
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .pankajimage2 {
+      width: 50%;
+    }
+
+    .million {
+      font-size: 45px;
+      font-weight: bold;
+      color: #4f585e;
+    }
+
+    .Registeredusers {
+      color: #4f585e;
+      font-size: 20px;
+    }
+
+    #pankajContainer3 {
+      height: 280px;
+      margin: auto;
+      margin-top: 50px;
+      background-color: #f2f5f5;
+      justify-content: space-between;
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pankajbuttons {
+      border: 0px;
+      font-weight: 900;
+      background-color: white;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+
+    #pankajhealth {
+      color: grey;
+    }
+
+    #pankajContainer3>div {
+      line-height: 20px;
+    }
+
+    #playstore {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: right;
+      width: 350px;
+      height: 50px;
+      gap: 20px;
+    }
+
+    #googleplay,
+    #appstore {
+      width: 100%;
+    }
+
+    #impactinglives {
+      font-size: 28px;
+      font-weight: bold;
+      color: #4f585e;
+      margin-top: 80px;
+    }
+
+    #impactinglives~p {
+      font-size: 28px;
+      font-weight: bold;
+      color: #4f585e;
+    }
+
+    #phoneimage {
+      margin-left: 200px;
+    }
+
+    #phoneimage>img {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pankajContainer">
+    <div id="Pankajupper">
+      <div>
+        <h2 id="pankajhealth">Health Articles</h2>
       </div>
-      <div id="healthArticles">
+      <div>
         <div>
-          <img
-            class="pankajimage"
-            src="https://blog-images.pharmeasy.in/2022/02/24122758/largeIntestine.jpg?dim=0x230&dpr=1&q=100"
-            alt="largeIntestine"
-          />
-          <h4>What is National Colorectal Cancer Awareness Month?...</h4>
-          <p>
-            Table of Contents Introduction Causes and Symptoms of Colorectal
-            Cancer Who is at risk? What is the Cure?
-          </p>
-          <p class="readmore">Read More ></p>
+          <h2 id="seeall">See All</h2>
         </div>
-        <div>
-          <img
-            class="pankajimage"
-            src="https://blog-images.pharmeasy.in/2022/02/24124018/Healthy-Food.jpg?dim=0x230&dpr=1&q=100"
-            alt="Healthy-Food"
-          />
-          <h4>Colorectal Cancer Awereness Month-Diet That can Help...</h4>
-          <p>
-            Do you find yourself wondering whether you meals are healty enough?
-            Did you know that certain types of foods can increase...
-          </p>
-          <p class="readmore">Read More ></p>
-        </div>
-        <div>
-          <img
-            class="pankajimage"
-            src="https://blog-images.pharmeasy.in/2022/02/24134836/Pregnancy-Vaccination.jpg?dim=0x230&dpr=1&q=100"
-            alt="Pregnancy-Vaccination"
-          />
-          <h4>Covid Vaccination During Pregnancy And Its Benefits...</h4>
-          <p>
-            Teble of Contents What do we know about Covid vaccination for
-            pregnant women? The importance of COVID-19 vaccine for...
-          </p>
-          <p class="readmore">Read More ></p>
-        </div>
+        <div><button class="pankajbuttons">&lt;</button></div>
+        <div><button class="pankajbuttons">&gt;</button></div>
       </div>
     </div>
-    <br />
-    <br />
-    <div id="pankajContainer2">
+    <div id="healthArticles">
       <div>
-        <img
-          class="pankajimage2"
-          src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg"
-          alt="family"
-        />
-        <p class="million">25 Million</p>
-        <p class="Registeredusers">Registered users as of jun 30,2021</p>
-      </div>
-      <div>
-        <img
-          class="pankajimage2"
-          src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg"
-          alt="bike"
-        />
-        <p class="million">8.8 Million</p>
-        <p class="Registeredusers">PharmEasy Orders as of FY21</p>
-      </div>
-      <div>
-        <img
-          class="pankajimage2"
-          src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg"
-          alt="medbox"
-        />
-        <p class="million">50k+</p>
-        <p class="Registeredusers">SKUs sold in Q1FY22</p>
-      </div>
-      <div>
-        <img
-          class="pankajimage2"
-          src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg"
-          alt="pincodes"
-        />
-        <p class="million">18k+</p>
-        <p class="Registeredusers">
-          Pin-Codes Serviced for the month of June 2021
+        <img class="pankajimage"
+          src="https://blog-images.pharmeasy.in/2022/02/24122758/largeIntestine.jpg?dim=0x230&dpr=1&q=100"
+          alt="largeIntestine" />
+        <h4>What is National Colorectal Cancer Awareness Month?...</h4>
+        <p>
+          Table of Contents Introduction Causes and Symptoms of Colorectal
+          Cancer Who is at risk? What is the Cure?
         </p>
+        <p class="readmore">Read More ></p>
+      </div>
+      <div>
+        <img class="pankajimage"
+          src="https://blog-images.pharmeasy.in/2022/02/24124018/Healthy-Food.jpg?dim=0x230&dpr=1&q=100"
+          alt="Healthy-Food" />
+        <h4>Colorectal Cancer Awereness Month-Diet That can Help...</h4>
+        <p>
+          Do you find yourself wondering whether you meals are healty enough?
+          Did you know that certain types of foods can increase...
+        </p>
+        <p class="readmore">Read More ></p>
+      </div>
+      <div>
+        <img class="pankajimage"
+          src="https://blog-images.pharmeasy.in/2022/02/24134836/Pregnancy-Vaccination.jpg?dim=0x230&dpr=1&q=100"
+          alt="Pregnancy-Vaccination" />
+        <h4>Covid Vaccination During Pregnancy And Its Benefits...</h4>
+        <p>
+          Teble of Contents What do we know about Covid vaccination for
+          pregnant women? The importance of COVID-19 vaccine for...
+        </p>
+        <p class="readmore">Read More ></p>
       </div>
     </div>
-    <!-- <div id="pankajContainer3">
+  </div>
+  <br />
+  <br />
+  <div id="pankajContainer2">
+    <div>
+      <img class="pankajimage2" src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg" alt="family" />
+      <p class="million">25 Million</p>
+      <p class="Registeredusers">Registered users as of jun 30,2021</p>
+    </div>
+    <div>
+      <img class="pankajimage2" src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg" alt="bike" />
+      <p class="million">8.8 Million</p>
+      <p class="Registeredusers">PharmEasy Orders as of FY21</p>
+    </div>
+    <div>
+      <img class="pankajimage2" src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg" alt="medbox" />
+      <p class="million">50k+</p>
+      <p class="Registeredusers">SKUs sold in Q1FY22</p>
+    </div>
+    <div>
+      <img class="pankajimage2" src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg" alt="pincodes" />
+      <p class="million">18k+</p>
+      <p class="Registeredusers">
+        Pin-Codes Serviced for the month of June 2021
+      </p>
+    </div>
+  </div>
+  <!-- <div id="pankajContainer3">
       <div>
         <p id="impactinglives">Simplifying Healthcare, Impacting Lives</p>
         <p>Download the App for free</p>
@@ -249,5 +254,6 @@
         />
       </div>
     </div> -->
-  </body>
+</body>
+
 </html>
