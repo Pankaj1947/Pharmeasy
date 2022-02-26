@@ -28,6 +28,9 @@
       #tickbox{margin-top: 20px;margin-left: 15px;}
       #assurity{font-size: 11px;}
       .popupMsg{color: red;font-size: 10px;}
+      #navbar{height: 100px;width: 100%;}
+      #mainbox{display: grid;grid-template-columns: repeat(4,1fr);}
+      #navbarImage{width: 40%;align-items: center;}
     </style>
 </head>
 <body>
@@ -96,16 +99,26 @@
         if(document.querySelector("#cardNumber").value.length==16 && document.querySelector("#cvv").value.length==3)
         {
             document.querySelector("#container").innerHTML="";
-            var para=document.createElement("p").innerText="Enter otp sent to your registered Mobile Number"
+            var navbar=document.createElement("div")
+            navbar.setAttribute("id","navbar")
+            var image=document.createElement("img")
+            image.setAttribute("src","https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png")
+            image.setAttribute("id","navbarImage")
+            navbar.append(image);
+            var para=document.createElement("p")
+            para.innerText="Enter otp sent to your registered Mobile Number"
+            var mainbox=document.createElement("div")
+            mainbox.setAttribute("id","mainbox")
+            var box1=document.createElement("div")
+            box1.innerText=
+            
+
+            document.querySelector("#container").append(navbar,para,mainbox);
         }
         else
         {
             document.querySelector(".popupMsg").innerHTML="Enter valid  details"
             document.querySelector("#submit").style.background="#959595"
         }
-    }
-    document.querySelector("#nameoncard").addEventListener("mouseenter",submitFun2)
-    function submitFun2(){
-        document.querySelector("#submit").style.background="#10847E"
     }
 </script>
