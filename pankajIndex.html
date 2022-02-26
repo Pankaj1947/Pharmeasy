@@ -10,7 +10,7 @@
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       }
-      #container {
+      #pankajContainer {
         height: 400px;
         margin: auto;
         display: grid;
@@ -18,17 +18,17 @@
         gap: 30px;
         margin-bottom: 50px;
       }
-      #upper {
+      #Pankajupper {
         justify-content: space-between;
         display: flex;
       }
-      #upper > div {
+      #Pankajupper > div {
         height: 100%;
         width: 250px;
         justify-content: space-around;
         display: flex;
       }
-      #upper > div > div {
+      #Pankajupper > div > div {
         display: flex;
       }
       #healthArticles {
@@ -42,7 +42,7 @@
       #healthArticles > div {
         cursor: pointer;
       }
-      .image {
+      .pankajimage {
         width: 100%;
         border-radius: 7px;
       }
@@ -52,7 +52,7 @@
         font-weight: bold;
       }
 
-      #container2 {
+      #pankajContainer2 {
         height: 300px;
         margin: auto;
         margin-top: 50px;
@@ -60,11 +60,11 @@
         grid-template-rows: 100%;
         grid-template-columns: repeat(4, 1fr);
       }
-      #container2 > div {
+      #pankajContainer2 > div {
         line-height: 20px;
         cursor: pointer;
       }
-      .image2 {
+      .pankajimage2 {
         width: 50%;
       }
       .million {
@@ -76,7 +76,7 @@
         color: #4f585e;
         font-size: 20px;
       }
-      #container3 {
+      #pankajContainer3 {
         height: 280px;
         margin: auto;
         margin-top: 50px;
@@ -86,7 +86,17 @@
         grid-template-rows: 100%;
         grid-template-columns: repeat(2, 1fr);
       }
-      #container3 > div {
+      .pankajbuttons {
+        border: 0px;
+        font-weight: 900;
+        background-color: white;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+      #pankajhealth {
+        color: grey;
+      }
+      #pankajContainer3 > div {
         line-height: 20px;
       }
       #playstore {
@@ -118,32 +128,23 @@
       #phoneimage > img {
         height: 100%;
       }
-      #health {
-        color: grey;
-      }
-      .buttons {
-        border: 0px;
-        font-weight: 900;
-        background-color: white;
-        margin-top: 25px;
-        cursor: pointer;
-      }
+      
     </style>
   </head>
   <body>
-    <div id="container">
-      <div id="upper">
-        <div><h2 id="health">Health Articles</h2></div>
+    <div id="pankajContainer">
+      <div id="Pankajupper">
+        <div><h2 id="pankajhealth">Health Articles</h2></div>
         <div>
           <div><h2 id="seeall">See All</h2></div>
-          <div><button class="buttons">&lt;</button></div>
-          <div><button class="buttons">&gt;</button></div>
+          <div><button class="pankajbuttons">&lt;</button></div>
+          <div><button class="pankajbuttons">&gt;</button></div>
         </div>
       </div>
       <div id="healthArticles">
         <div>
           <img
-            class="image"
+            class="pankajimage"
             src="https://blog-images.pharmeasy.in/2022/02/24122758/largeIntestine.jpg?dim=0x230&dpr=1&q=100"
             alt="largeIntestine"
           />
@@ -156,7 +157,7 @@
         </div>
         <div>
           <img
-            class="image"
+            class="pankajimage"
             src="https://blog-images.pharmeasy.in/2022/02/24124018/Healthy-Food.jpg?dim=0x230&dpr=1&q=100"
             alt="Healthy-Food"
           />
@@ -169,7 +170,7 @@
         </div>
         <div>
           <img
-            class="image"
+            class="pankajimage"
             src="https://blog-images.pharmeasy.in/2022/02/24134836/Pregnancy-Vaccination.jpg?dim=0x230&dpr=1&q=100"
             alt="Pregnancy-Vaccination"
           />
@@ -184,10 +185,10 @@
     </div>
     <br />
     <br />
-    <div id="container2">
+    <div id="pankajContainer2">
       <div>
         <img
-          class="image2"
+          class="pankajimage2"
           src="https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg"
           alt="family"
         />
@@ -196,7 +197,7 @@
       </div>
       <div>
         <img
-          class="image2"
+          class="pankajimage2"
           src="https://assets.pharmeasy.in/web-assets/dist/92c372bb.svg"
           alt="bike"
         />
@@ -205,7 +206,7 @@
       </div>
       <div>
         <img
-          class="image2"
+          class="pankajimage2"
           src="https://assets.pharmeasy.in/web-assets/dist/773ae9c5.svg"
           alt="medbox"
         />
@@ -214,7 +215,7 @@
       </div>
       <div>
         <img
-          class="image2"
+          class="pankajimage2"
           src="https://assets.pharmeasy.in/web-assets/dist/f2d557d3.svg"
           alt="pincodes"
         />
@@ -224,7 +225,7 @@
         </p>
       </div>
     </div>
-    <div id="container3">
+    <!-- <div id="pankajContainer3">
       <div>
         <p id="impactinglives">Simplifying Healthcare, Impacting Lives</p>
         <p>Download the App for free</p>
@@ -247,6 +248,6 @@
           alt="googleplay"
         />
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
