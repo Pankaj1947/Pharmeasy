@@ -1,5 +1,5 @@
 var covidData = [
-    // dettolbrand
+
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI40695%2Fdettol-antiseptic-liquid-bottle-of-550-ml-2-1643880193.jpg&w=256&q=75",
         name: "DEttol Antiseptic Liquid Bottle of 550ml",
@@ -21,8 +21,6 @@ var covidData = [
         price: 95,
         rating: "70ratings",
     },
-
-    // savlon   
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F156765%2Fsavlon-antiseptic-disinfectant-liquid-1000-ml-2-1643883834.jpg&w=256&q=75",
         name: "Savlon Antiseptic Disinfectant Liquid 1000 Ml",
@@ -33,19 +31,17 @@ var covidData = [
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FY75406%2Fsavlon-moisutre-shield-handwash-refill-of-175-ml-2-1641789022.jpg&w=256&q=75",
         name: "Savlon Moisutre Shield Handwash Refill Of 175 Ml",
-        strikeOffPric: 36,
+        strikeOffPrice: 36,
         price: 33.12,
         rating: "30ratings",
     },
     {
-        img="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FM45050%2Fsavlon-germ-protection-wet-wipes-pack-of-72-2-1641790021.jpg&w=256&q=75",
-        name="Savlon Germ Protection Wet Wipes Pack Of 72",
+        img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FM45050%2Fsavlon-germ-protection-wet-wipes-pack-of-72-2-1641790021.jpg&w=256&q=75",
+        name: "Savlon Germ Protection Wet Wipes Pack Of 72",
         strikeOffPrice: 189.00,
-        price=160.65,
-        rating="11ratings",
+        price: 160.65,
+        rating: "11ratings",
     },
-
-    // vicks
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F181140%2Fvicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1643883635.jpg&w=256&q=75",
         name: "Vicks Vaporub 50ml, Relief From Cold, Cough...",
@@ -62,13 +58,11 @@ var covidData = [
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FI39757%2Fvicks-babyrub-10ml-specifically-for-babies-moisturize-2-1641788233.jpg&w=256&q=75",
-        name="Vicks Babyrub 10ml, Specifically For Babies...",
+        name: "Vicks Babyrub 10ml, Specifically For Babies...",
         strikeOffPrice: 42.00,
         price: 39.9,
         rating: "68ratings",
     },
-
-    // mask
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU82801%2F3-ply-mask-packet-of-100-2-1643876735.jpg&w=256&q=75",
         name: "3 Ply Mask Packet Of 100",
@@ -78,7 +72,7 @@ var covidData = [
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FH73193%2F3-ply-mask-packet-of-50-2-1643881893.jpg&w=256&q=75",
-        text="3 Ply Mask Packet Of 50",
+        text: "3 Ply Mask Packet Of 50",
         strikeOffPrice: 1251.00,
         price: 187.65,
         rating: "233ratings",
@@ -90,7 +84,6 @@ var covidData = [
         price: 620,
         rating: "11ratings",
     },
-    // revital
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2F281751%2Frevital-h-health-supplement-capsules-bottle-of-60-2-1643883822.jpg&w=256&q=75",
         name: "Revital H Health Supplement Capsules...",
@@ -112,7 +105,6 @@ var covidData = [
         price: 276,
         rating: "410ratings",
     },
-    // lifebuoy
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FY66652%2Flifebuoy-alcohol-based-hand-sanitizer-500ml-2-1641789456.jpg&w=256&q=75",
         name: "Lifebuoy Alcohol Based Hand Sanitizer 500ml",
@@ -128,19 +120,11 @@ var covidData = [
         rating: "5ratings",
     },
     {
-        img="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU99737%2Flifebuoy-antibacterial-germ-kill-spray-no-gas-safe-on-skin-safe-on-surfaces-85-ml-2-1641789752.jpg&w=256&q=75",
+        img:"https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU99737%2Flifebuoy-antibacterial-germ-kill-spray-no-gas-safe-on-skin-safe-on-surfaces-85-ml-2-1641789752.jpg&w=256&q=75",
         name: "Lifebuoy Antibacterial Germ Kill Spray (No...",
         strikeOffPrice: 99.00,
-        price=88.1,
-        rating="10ratings",
-    },
-    // goodhome
-    {
-        img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU61231%2Fgood-home-rose-and-sandal-spray-room-air-freshner-2-x-160-ml-2-1641795805.jpg&w=256&q=75",
-        name: "Good Home Rose And Sandal Spray - Room & ...",
-        strikeOffPrice: 298.00,
-        price: 253.3,
-        rating: "15ratings",
+        price: 88.1,
+        rating: "10ratings",
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU61231%2Fgood-home-rose-and-sandal-spray-room-air-freshner-2-x-160-ml-2-1641795805.jpg&w=256&q=75",
@@ -156,7 +140,14 @@ var covidData = [
         price: 253.3,
         rating: "15ratings",
     },
-    // accusure
+    {
+        img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU61231%2Fgood-home-rose-and-sandal-spray-room-air-freshner-2-x-160-ml-2-1641795805.jpg&w=256&q=75",
+        name: "Good Home Rose And Sandal Spray - Room & ...",
+        strikeOffPrice: 298.00,
+        price: 253.3,
+        rating: "15ratings",
+    },
+    
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FY43761%2Faccusure-fingertip-pulse-oximeter-yk011-2-1643876456.jpg&w=256&q=75",
         name: "Accusure Fingertip Pulse Oximeter - Yk011",
@@ -165,11 +156,11 @@ var covidData = [
         rating: "56ratings",
     },
     {
-        img="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FQ40087%2Faccusure-non-contact-thermometer-2-1641790914.jpg&w=256&q=75",
-        name="Accusure Non Contact Thermometer",
+        img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FQ40087%2Faccusure-non-contact-thermometer-2-1641790914.jpg&w=256&q=75",
+        name: "Accusure Non Contact Thermometer",
         strikeOffPrice: 2990.00,
-        price=1980,
-        rating="45ratings",
+        price: 1980,
+        rating: "45ratings",
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FU26627%2Faccusure-digital-thermometers-mt-1027-hard-tip-white-1-1641789880.jpg&w=256&q=75",
@@ -178,13 +169,12 @@ var covidData = [
         price: 154.70,
         rating: "69ratings",
     },
-    // ambipur
     {
-        img="https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA46786%2Fambi-pur-air-effects-air-freshener-sweet-berries-275g-2-1641789136.jpg&w=256&q=75",
-        name="Ambi Pur Air Effects Air Freshener (Sweet...",
+        img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FA46786%2Fambi-pur-air-effects-air-freshener-sweet-berries-275g-2-1641789136.jpg&w=256&q=75",
+        name: "Ambi Pur Air Effects Air Freshener (Sweet...",
         strikeOffPrice: 279.00,
-        price=248.31,
-        rating="49ratings",
+        price: 248.31,
+        rating: "49ratings",
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FY59903%2Fambi-pur-car-freshener-exotic-jasmine-starter-kit-upto-60-days-75ml-2-1641789578.jpg&w=256&q=75",
@@ -200,13 +190,12 @@ var covidData = [
         price: 177.11,
         rating: "49ratings",
     },
-    // luxarnano
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FE45370%2Fluxor-nano-pen-sanitizer-spray-twin-pack-lemon-zest-10ml-x2-2-1641793972.jpg&w=256&q=75",
         name: "Luxor Nano Pen Sanitizer Spray Twin...",
         strikeOffPrice: 100.00,
-        orice: 55,
-        rating="5ratings",
+        price: 55,
+        rating: "5ratings",
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FB60423%2Fluxor-nano-pen-sanitizer-spray-with-refill-bottle-10-ml-20-ml-classic-2-1641793682.jpg&w=256&q=75",
@@ -217,10 +206,11 @@ var covidData = [
     },
     {
         img: "https://pharmeasy.in/_next/image?url=https%3A%2F%2Fcdn01.pharmeasy.in%2Fdam%2Fproducts_otc%2FQ75485%2Fluxor-nano-gadget-disinfectant-spray-25ml-2-1641793684.jpg&w=256&q=75",
-        name="Luxor Nano Gadget Disinfectant Spray...",
+        name: "Luxor Nano Gadget Disinfectant Spray...",
         strikeOffPrice: 100.00,
         price: 55,
         rating: "8ratings",
 
-    },
+    }
 ];
+localStorage.setItem("healthcaredata", JSON.stringify(covidData))

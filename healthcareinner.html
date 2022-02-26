@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health care </title>
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/healthcareinner.css">
 </head>
 
 <body>
@@ -41,46 +42,112 @@
         <a href="">RTCPR</a>
     </div>
     <div id="healthpageinner">
-        <div><p>Home > All Categories > Covid Essentials</p></div>
-        <div id="left_filter">
-            <h1>Filter</h1>
-            <h2>Category</h2>
-            <div>
-                <label for="">Covid Essentials</label>
-                <input type="radio" name="" id="">
-            </div>
-            <hr>
-            <h2>Sub category</h2>
-            <div>
-                <label for="">Covid Test Kits</label>
-                <input type="radio" name="" id="">
-            </div>
-            <div>
-                <label for="">Disinfectants</label>
-                <input type="radio" name="" id="">
-            </div>
-            <div>
-                <label for="">Home Hygiene Essentials</label>
-                <input type="radio" name="" id="">
-            </div>
-            <div>
-                <label for="">Masks</label>
-                <input type="radio" name="" id="">
-            </div>
-            <div>
-                <label for="">Hand Sanitizers</label>
-                <input type="radio" name="" id="">
-            </div>
-            <a href="">View More</a>
-            <hr>
-            <h2>Brand</h2>
-           <div><input type="text" placeholder="Search"></div>
-           <div>
-               <label for=""></label>
-               
-           </div>
+        <div>
+            <p>Home > All Categories > Covid Essentials</p>
         </div>
+        <div id="innerdata">
+            <div id="left_filter">
+                <h1>Filter</h1>
+                <h2>Category</h2>
+                <div class="filter_inner">
+                    <label for="">Covid Essentials</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <hr>
+                <h2>Sub category</h2>
+                <div class="filter_inner">
+                    <label for="">Covid Test Kits</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <div class="filter_inner">
+                    <label for="">Disinfectants</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <div class="filter_inner">
+                    <label for="">Home Hygiene Essentials</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <div class="filter_inner">
+                    <label for="">Masks</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <div class="filter_inner">
+                    <label for="">Hand Sanitizers</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <a href="">View More</a>
+                <hr>
+                <h2>Brand</h2>
+                <div><input type="text" placeholder="Search"></div>
+                <div class="filter_inner">
+                    <label for="">Aarshaveda</label>
+                    <input type="checkbox">
+
+                </div>
+                <div class="filter_inner">
+                    <label for="">Accusure</label>
+                    <input type="checkbox">
+
+                </div>
+                <div class="filter_inner">
+                    <label for="">Aerofusion</label>
+                    <input type="checkbox">
+
+                </div>
+                <div class="filter_inner">
+                    <label for="">Airwick</label>
+                    <input type="checkbox">
+
+                </div>
+                <div class="filter_inner">
+                    <label for="">Albert</label>
+                    <input type="checkbox">
+
+                </div>
+                <a href="">View More</a>
+                <h2>Price</h2>
+                <Div class="filter_inner">
+                    <label for="">Below 99</label>
+                    <input type="checkbox">
+                </Div>
+                <Div class="filter_inner">
+                    <label for="">100 - 199</label>
+                    <input type="checkbox">
+                </Div>
+                <Div class="filter_inner">
+                    <label for="">200 - 299</label>
+                    <input type="checkbox">
+                </Div>
+                <Div class="filter_inner">
+                    <label for="">300 - 399</label>
+                    <input type="checkbox">
+                </Div>
+                <Div class="filter_inner">
+                    <label for="">400 - 499</label>
+                    <input type="checkbox">
+                </Div>
+                <a href="">View More</a>
+            </div>
+            <div id="bech"></div>
+            <div id="right_filter">
+                <div id='right_filter_top'>
+                    <h1>Covid Essentials</h1>
+                    <div><label for="">Sort by:</label>
+                    <select name="" id="sortby">
+                        <option value="pop">Popularity</option>
+                        <option value="h2l">Price high to low</option>
+                        <option value="l2h">Price low to high</option>
+                        <option value="">Discount</option>
+                    </select></div>
+                </div>
+                <div id="showdatapage"></div>
+
+            </div>
+        </div>
+
     </div>
 </body>
 
 </html>
+<script src="./jsfile/healthcareinner.js"></script>
+<script src="./data/healthcare.js"></script>
