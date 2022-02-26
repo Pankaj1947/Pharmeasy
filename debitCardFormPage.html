@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>DebitCardFormPage</title>
     <style>
-        #container{display: grid;grid-template-rows:180px 50px 50px 150px 40px 45px 45px 45px;border: 1px solid green;height: 600px;width: 30%;margin: auto;}
-        #container>div{border: 1px solid red;width: 85%;justify-content: center;margin: auto;height: 100%;}
-        #validity,#validityInput,#checkbox{display: grid;grid-template-columns: 100px 60px;gap: 50px;border: 1px solid teal;}
-        #validity>div{border: 1px solid blue;text-align: center;}
+        *{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: #4f585e;background-color: white;}
+        #container{display: grid;grid-template-rows:170px 45px 55px 140px 45px 45px 45px 45px;border: 1px solid green;height: 600px;width: 30%;margin: auto;gap: 10px;}
+        #container>div{width: 85%;justify-content: center;margin: auto;height: 100%;}
+        #validity,#validityInput{display: grid;grid-template-columns: 100px 60px;gap: 50px;}
+        #validity>div{text-align: center;}
+        #checkbox,#cardSecurity{display: grid;grid-template-columns: 1fr 7fr;cursor: pointer;}
+        /* #checkbox>div{border: 1px solid teal;} */
+        .imagePercentage {
+        width: 10%;
+        margin-right: 5px;
+      }
+      #shield{color: #3BB896;}
+      #cardNumber,#cardvalidity,#cvv,#nameoncard,#submit{height: 35px;width: 70%;font-size: 18px;border-radius: 8px;border: 1px solid #10847e;}
+      #cardvalidity,#cvv,#nameoncard{width: 100%;}
+      #submit{background-color: #959595;color: white;font-weight: 500;width: 100%;cursor: pointer;height: 100%;border: 0px;}
+      #tickbox{margin-top: 20px;margin-left: 15px;}
+      #assurity{font-size: 11px;}
+      .popupMsg{color: red;font-size: 10px;}
     </style>
 </head>
 <body>
@@ -18,30 +35,76 @@
             <h3>Enter New Card</h3>
             <hr/>
             <p>Card Number</p>
-            <input type="number" placeholder="1234-5678-9876-5432">
+            <input id="cardNumber" type="number" placeholder="1234-5678-9876-5432">
+            <p class="popupMsg"></p>
         </div>
         <div id="validity">
             <p>Valid Through</p>
             <p>CVV</p>
         </div>
         <div id="validityInput">
-            <input type="text" placeholder="MM/YY">
-            <input type="password" placeholder="123">
+            <input id="cardvalidity" type="text" placeholder="MM/YY">
+            <input id="cvv" type="password" placeholder="123">
         </div>
         <div>
             <p>Name on Card</p>
-            <input type="text" placeholder="e.g. Ravi Kumar">
+            <input id="nameoncard" type="text" placeholder="e.g. Ravi Kumar">
+            <div id="checkbox">
+                <div><input id="tickbox" type="checkbox"></div>
+                <div><p>Save this card for future payments</p></div>
+            </div>
+            <p>We support</p>
         </div>
         <div>
-            <div id="checkbox">
-                <input type="checkbox">
-                <p>save this card for</p>
-            </div>
-            <div></div>
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png"
+              alt="visa"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png"
+              alt="mastercard-logo"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png"
+              alt="rupay"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png"
+              alt="maestro-logo"
+            />
+            <img
+              class="imagePercentage"
+              src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png"
+              alt="dinerCard"
+            />
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><button id="submit">Place Order & Pay</button></div>
+        <div id="cardSecurity">
+            <div><i id="shield" class="material-icons">shield</i></div>
+            <div id="assurity">Your card details will be stored securely for your convenience. We do not store CVV.</div>
+        </div>
     </div>
 </body>
 </html>
+<script>
+    document.querySelector("#submit").addEventListener("click",submitFun)
+    function submitFun(){
+        if(document.querySelector("#cardNumber").value.length==16)
+        {
+            document.querySelector(".popupMsg").innerHTML=""
+        }
+        else
+        {
+            document.querySelector(".popupMsg").innerHTML="Enter valid  details"
+            document.querySelector("#submit").style.background="#959595"
+        }
+    }
+    document.querySelector("#nameoncard").addEventListener("mouseenter",submitFun2)
+    function submitFun2(){
+        document.querySelector("#submit").style.background="#10847E"
+    }
+</script>
