@@ -9,8 +9,9 @@
     <style>
         *{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        color: #4f585e;background-color: white;}
-        #container{display: grid;grid-template-rows:170px 45px 55px 140px 45px 45px 45px 45px;border: 1px solid green;height: 600px;width: 30%;margin: auto;gap: 10px;}
+        color: #4f585e;}
+        #container{display: grid;grid-template-rows:170px 45px 55px 140px 45px 45px 45px 45px;border: 1px solid green;
+            height: 600px;width: 30%;margin: auto;gap: 10px;background-color: white;}
         #container>div{width: 85%;justify-content: center;margin: auto;height: 100%;}
         #validity,#validityInput{display: grid;grid-template-columns: 100px 60px;gap: 50px;}
         #validity>div{text-align: center;}
@@ -53,7 +54,6 @@
                 <div><input id="tickbox" type="checkbox"></div>
                 <div><p>Save this card for future payments</p></div>
             </div>
-            <p>We support</p>
         </div>
         <div>
             <img
@@ -93,9 +93,10 @@
 <script>
     document.querySelector("#submit").addEventListener("click",submitFun)
     function submitFun(){
-        if(document.querySelector("#cardNumber").value.length==16)
+        if(document.querySelector("#cardNumber").value.length==16 && document.querySelector("#cvv").value.length==3)
         {
-            document.querySelector(".popupMsg").innerHTML=""
+            document.querySelector("#container").innerHTML="";
+            var para=document.createElement("p").innerText="Enter otp sent to your registered Mobile Number"
         }
         else
         {
