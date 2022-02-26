@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #container {
+            width: 100%;
+            font-family: Open Sans,sans-serif;
+            color: #4f585e;
+        }
+
+        #mainDiv{
+            width: 90%;
+            display: flex;
+            justify-content:space-between;
+        }
+
+        /* left side */
+
+            #leftDiv {
+                width: 60%;
+                margin-left: 80px;
+                margin-top: 20px;
+                
+            }
+
+            #imgcomDiv{
+                border-radius: 10px;
+                margin-bottom: 90px;
+                height: 270px;
+                border: 1px solid rgb(199, 198, 198);
+                display: flex;
+                justify-content:space-between;
+            }
+
+            #itemImg {
+                height: 80px;
+                width: 60px;
+                margin: 30px 20px 0px 20px;
+            }
+
+            #compDiv {
+                width: 80%;
+                margin: 30px 20px 0px 10px;
+            }
+
+            #innerDiv {
+                text-align: left;
+            }
+
+            #nameDelDiv {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #itemName {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            #delBtn{
+                border: none;
+                font-size: 15px;
+            }
+
+            #itemStrikedPrice {
+                text-decoration: line-through;
+                font-size: 12px;
+                margin-bottom: -15px;
+            }
+            
+            #itemPrice {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            #btn {
+                font-size: 20px;
+                font-weight: 700;
+                border: 1px solid #abacad; 
+                border-radius: 10px;
+                background-color: white;
+                height: 60px;
+                width: 130px;
+                margin-bottom: 20px;
+            }
+
+            #innerDiv {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #btnSelect {
+                border: none;
+            }
+
+            #dropdownDiv {
+                border: none;
+            }
+
+            #btnTextDiv {
+                margin-right: 30px;
+                color: #4f585e;
+            }
+
+            #expressdly{
+                font-size: 18px;
+                color: #4f585e;
+            }
+            
+            span {
+                font-weight: 600;
+            }
+
+            /* right side */
+
+            #rightDiv {
+                width: 25%;
+                height: 270px;
+                margin-top: 100px;
+                margin-left: 90px;
+                
+            }
+
+            #rightDiv > div:first-child{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #container > #mainDiv > div:last-child > div{
+                margin-bottom: 20px;
+            }
+
+            #container > #mainDiv > div:last-child > div:first-child{
+                height: 60px;
+                width: 400px;
+                background-color: teal;
+                border-radius: 9px;
+                color: white;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+
+            #container > #mainDiv > div:last-child > div:nth-child(2){
+                font-weight: 700;
+                font-size: 25px;
+            }
+
+            #container > #mainDiv > div:last-child > div:last-child{
+                font-weight: 700;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div id="container" >
+        <div id="mainDiv" >
+            <div id="leftDiv" ></div>
+            <div id="rightDiv" >
+                <div>Add Delivery Address</div>
+                <div id="orderSummary" >Order Summary</div>
+                <div id="cartValue" ></div>
+                <div id="dlyCharge" ></div>
+                <hr>
+                <div id="amount" ></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="./Data/data.js" ></script>
+<script src="cartFinal.js" ></script>
