@@ -1,6 +1,10 @@
 # Pharmeasy
 Construct Week Project
 
+TOPIC STATEMENT
+
+The working clone of "Take it easy, Pharmeasy", which delivers medicines and other healthcare items, now available via prescriptions. To build this clone we have used HTML5, CSS3, Advanced Javascript. Alongside doing this project, we learned so many new things about team work, proper coordination and thinking along with all the team members. This was our first basic project using basic tools at Masai School. More amazing projects to come ..😊
+
 FUNCTIONALITIES IMPLEMENTED
 
 1. Login via OTP verification
