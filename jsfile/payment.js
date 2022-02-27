@@ -20,8 +20,9 @@ document.querySelector("#itemrealPrice").innerText = cartvalue1
 // document.querySelector("#deliverystrikedOff").innerText =
 // document.querySelector("#deliveryrealprice").innerText = 
 var newtotal1 = Number(cartvalue1 + 30)
-document.querySelector("#totalprice").innerText = newtotal1.toFixed(2);
 document.querySelector("#totalSavings").innerText = "Total Savings of " + save.toFixed(2) + " on this order";
+document.querySelector("#totalprice").innerText = 30 + Number(newtotal1.toFixed(2));
+
 
 
 
