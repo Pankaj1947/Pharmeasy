@@ -1,0 +1,40 @@
+#healthpageinner {
+  width: 80%;
+  margin: auto;
+}
+#innerdata {
+  display: flex;
+  justify-content: space-between;
+}
+.filter_inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+#right_filter_top {
+  display: flex;
+  justify-content: space-between;
+}
+#showdatapage {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+
+}
+#showdatapage>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#showdatapage>div>img{
+    height: 150px;
+    width: 40%;
+    margin-left: 25%;
+}
+#bech{
+    width: 100px;
+}
+#left_filter a{
+text-decoration: none;
+color: teal;
+}

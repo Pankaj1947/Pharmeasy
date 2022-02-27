@@ -97,3 +97,6 @@ function otpconfirm(v, error) {
         error.innerText = "The code entered is incorrect."
     }
 }
+document.querySelector("#cartdiv").addEventListener("click", function () {
+    window.location="cart.html"
+})
