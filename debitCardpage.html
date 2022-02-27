@@ -124,7 +124,7 @@
       }
       .realPrice{font-weight: 600;}
       .strikedOff{text-decoration: line-through;font-size: 14px;margin-top: 3px;}
-      #totalSavings {
+      #totalSavingsbox {
         border: 1px dashed #10847e;
         align-items: center;
         background-color: #f2fff8;
@@ -299,16 +299,16 @@
           <div>
             <div>Delivery Charge</div>
             <div class="moneyshow">
-              <div id="deliverystrikedOff" class="strikedOff">₹85.00</div>
-              <div id="deliveryrealprice" class="realPrice">₹75.00</div>
+              <div id="deliverystrikedOff" class="strikedOff">₹49.00</div>
+              <div id="deliveryrealprice" class="realPrice">₹30.00</div>
             </div>
           </div>
           <div>
             <div class="bigletter">Amount to be paid</div>
             <div id="totalprice" class="realPrice">₹215.25</div>
           </div>
-          <div id="totalSavings">
-            <p>Total Savings of on this order</p>
+          <div id="totalSavingsbox">
+            <p id="totalSavings">Total Savings of on this order</p>
           </div>
         </div>
       </div>
@@ -466,17 +466,21 @@
 </html>
 <script>
 var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+console.log(cartData)
 
-cartData.reduce(function(acc,item){
+var cartvalue= cartData.reduce(function(acc,item){
+return acc+item.price
 
 
+},0)
+var strikedtotal=cartData.reduce(function(acc,item){
+  return acc+item.strikedOffprice
+},0)
 
-})
-
-document.querySelector("#itemstrikedoff").innerText = 
+// document.querySelector("#itemstrikedoff").innerText = 
 document.querySelector("#itemrealPrice").innerText = 
-document.querySelector("#deliverystrikedOff").innerText = 
-document.querySelector("#deliveryrealprice").innerText = 
+// document.querySelector("#deliverystrikedOff").innerText = 
+// document.querySelector("#deliveryrealprice").innerText = 
 document.querySelector("#totalprice").innerText = 
 document.querySelector("#totalSavings").innerText = "Total Savings of"+    +"on this order"
 
