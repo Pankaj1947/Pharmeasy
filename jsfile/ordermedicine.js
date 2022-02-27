@@ -25,7 +25,7 @@ function searchdata() {
             price.innerText = ele.price;
             price.setAttribute("id", "tabletprice");
             var strikeprice = document.createElement("p");
-            strikeprice.innerText = ele.strikeOffprice;
+            strikeprice.innerText = ele.strikeOffPrice;
             strikeprice.setAttribute("id", "tabletstrike");
 
             var button = document.createElement("button");

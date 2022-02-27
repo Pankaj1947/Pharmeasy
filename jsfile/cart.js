@@ -8,13 +8,15 @@ var total = cartdata.reduce(function (acc, item, index, array) {
     return acc + item.price;
 
 }, 0);
-document.querySelector("#cartValue").innerText = "Cart Value:" + " " + total;
+var newtotal = total.toFixed(1)
+// 
+document.querySelector("#cartValue").innerText = "Cart Value: " + "  " + newtotal;
 console.log(total);
 
 var chrg = 30;
-document.querySelector("#dlyCharge").innerText = "Delivery Charge:" + " " + chrg;
+document.querySelector("#dlyCharge").innerText = "Delivery Charge: " + "  " + chrg;
 
-document.querySelector("#amount").innerText = "Amount to be paid:" + " " + Number(total + chrg);
+document.querySelector("#amount").innerText = "Amount to be paid: " + "  " + Number(newtotal + chrg);
 
 
 
@@ -118,6 +120,21 @@ function removeData(item, index) {
     cartdata.splice(index, 1);
     localStorage.setItem("cartdata", JSON.stringify(cartdata));
     displayData(cartdata);
+
+
+    var total = cartdata.reduce(function (acc, item, index, array) {
+        return acc + item.price;
+
+    }, 0);
+    var newtotal = total.toFixed(1)
+    document.querySelector("#cartValue").innerText = "Cart Value: " + "  " + newtotal;
+    console.log(total);
+
+    // var chrg = 30;
+    document.querySelector("#dlyCharge").innerText = "Delivery Charge: " + "  " + chrg;
+
+    document.querySelector("#amount").innerText = "Amount to be paid: " + " " + Number(newtotal + chrg);
+
 }
 
 document.querySelector("#mainlogo").addEventListener("click", function () {

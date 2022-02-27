@@ -1,22 +1,27 @@
 
-var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
-console.log(cartData)
+// var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 
-var cartvalue = cartData.reduce(function (acc, item) {
+console.log(cartdata)
+
+var cartvalue = cartdata.reduce(function (acc, item) {
     return acc + item.price
-
-
 }, 0)
-var strikedtotal = cartData.reduce(function (acc, item) {
-    return acc + item.strikedOffprice
+console.log(cartvalue)
+let cartvalue1 = cartvalue.toFixed(2)
+var strikedtotal = cartdata.reduce(function (acc, item) {
+    return acc + item.strikeOffPrice
 }, 0)
-
+var newstrik = strikedtotal.toFixed(2)
+// console.log('strikedtotal:', strikedtotal)
+var save = newstrik - cartvalue1
 // document.querySelector("#itemstrikedoff").innerText = 
-document.querySelector("#itemrealPrice").innerText =
-    // document.querySelector("#deliverystrikedOff").innerText = 
-    // document.querySelector("#deliveryrealprice").innerText = 
-    document.querySelector("#totalprice").innerText =
-    document.querySelector("#totalSavings").innerText = "Total Savings of" + +"on this order"
+document.querySelector("#itemrealPrice").innerText = cartvalue1
+// document.querySelector("#deliverystrikedOff").innerText =
+// document.querySelector("#deliveryrealprice").innerText = 
+var newtotal1 = Number(cartvalue1 + 30)
+document.querySelector("#totalprice").innerText = newtotal1.toFixed(2);
+document.querySelector("#totalSavings").innerText = "Total Savings of " + save.toFixed(2) + " on this order";
 
 
 
@@ -31,7 +36,7 @@ function submitFun() {
         console.log("someone clicked");
         document.querySelector("#cardbox").innerHTML = ""
         document.querySelector("#otpwala").style.display = "block"
-        
+
     } else {
         document.querySelector(".popupMsg").innerHTML = "Enter valid details";
         document.querySelector("#submit").style.background = "#959595";
@@ -47,7 +52,7 @@ function paybuttoncolor() {
 
 
 document.querySelector("#crdit").addEventListener("click", function () {
-    document.querySelector("#cardbox").style.display="block"
+    document.querySelector("#cardbox").style.display = "block"
 });
 
 // document.querySelector("#input").addEventListener("click", submitFun);
@@ -59,6 +64,6 @@ document.querySelector("#crdit").addEventListener("click", function () {
 
 // }
 document.querySelector("#button1020").addEventListener('click', function () {
-    window.location="sucess.html"
+    window.location = "sucess.html"
 })
 
