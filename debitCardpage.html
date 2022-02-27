@@ -292,20 +292,20 @@
           <div>
             <div>Cart Value</div>
             <div class="moneyshow">
-              <div class="strikedOff">₹165.00</div>
-              <div class="realPrice">₹140.25</div>
+              <div id="itemstrikedoff" class="strikedOff">₹165.00</div>
+              <div id="itemrealPrice" class="realPrice">₹140.25</div>
             </div>
           </div>
           <div>
             <div>Delivery Charge</div>
             <div class="moneyshow">
-              <div class="strikedOff">₹85.00</div>
-              <div class="realPrice">₹75.00</div>
+              <div id="deliverystrikedOff" class="strikedOff">₹85.00</div>
+              <div id="deliveryrealprice" class="realPrice">₹75.00</div>
             </div>
           </div>
           <div>
             <div class="bigletter">Amount to be paid</div>
-            <div class="realPrice">₹215.25</div>
+            <div id="totalprice" class="realPrice">₹215.25</div>
           </div>
           <div id="totalSavings">
             <p>Total Savings of on this order</p>
@@ -465,10 +465,31 @@
   </body>
 </html>
 <script>
+var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+
+cartData.reduce(function(acc,item){
+
+
+
+})
+
+document.querySelector("#itemstrikedoff").innerText = 
+document.querySelector("#itemrealPrice").innerText = 
+document.querySelector("#deliverystrikedOff").innerText = 
+document.querySelector("#deliveryrealprice").innerText = 
+document.querySelector("#totalprice").innerText = 
+document.querySelector("#totalSavings").innerText = "Total Savings of"+    +"on this order"
+
+
+
+
+
+
+
   document
     .querySelector("#creditAndDebitCard")
-    .addEventListener("click", submitFun);
-  function submitFun() {
+    .addEventListener("click", showform);
+  function showform() {
     console.log("someone clicked");
   }
 </script>
