@@ -92,7 +92,7 @@ function otpconfirm(v, error) {
     // console.log(v)
     if (v == "1234") {
         document.querySelector("#loginpage").style.display = "none";
-        document.querySelector("#loginbtn").innerText = "Gajraj"
+        document.querySelector("#loginbtn").innerText = "Sachin Smp"
     } else {
         error.innerText = "The code entered is incorrect."
     }
