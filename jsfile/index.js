@@ -100,3 +100,51 @@ function otpconfirm(v, error) {
 document.querySelector("#cartdiv").addEventListener("click", function () {
     window.location="cart.html"
 })
+
+
+var reviewController = document.querySelectorAll(".reviewController");
+var reviewPics = document.getElementsByClassName("R");
+var r = 0;
+reviewController[1].onclick = () => {
+  r++;
+  for (var i of reviewPics) {
+    if (r == 0) {
+      i.style.left = "0px";
+    }
+    if (r == 1) {
+      i.style.left = "-740px";
+    }
+    if (r == 2) {
+      i.style.left = "-1480px";
+    }
+    if (r == 3) {
+      i.style.left = "-2220px";
+    }
+    if (r == 4) {
+      i.style.left = "-2960px";
+    }
+    if (r > 4) {
+      r = 4;
+    }
+  }
+};
+reviewController[0].onclick = () => {
+  r--;
+  for (var i of reviewPics) {
+    if (r == 0) {
+      i.style.left = "0px";
+    }
+    if (r == 1) {
+      i.style.left = "-740px";
+    }
+    if (r == 2) {
+      i.style.left = "-1480px";
+    }
+    if (r == 3) {
+      i.style.left = "-2220px";
+    }
+    if (r < 0) {
+      r = 0;
+    }
+  }
+};

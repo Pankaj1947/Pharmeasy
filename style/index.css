@@ -69,6 +69,17 @@
   padding: 10px;
 }
 
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(102, 102, 102);
+  opacity: 0.7;
+}
+.carousel-indicators li:hover {
+  cursor: pointer;
+}
+
 #slider {
   display: flex;
   justify-content: space-between;
@@ -153,26 +164,32 @@
 }
 /* sachin css starts */
 
-.container {
+.sachcontainer {
+  width: 100%;
   display: flex;
-  margin: 30px 0px;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.container > .subdiv {
-  width: 605px;
+/* .container > .subdiv {
+  width: 33.33%;
   height: 192px;
-  /* border: 1px solid #dfe3e6; */
+} */
+
+.sachcontainer > .subdiv:first-child {
+  margin-left: 20px;
 }
 
-.subdiv {
-  border-radius: 6px;
+.sachcontainer > .subdiv {
+  border: 1px solid #dfe3e6;
   margin-right: 20px;
-  width: 188.33px;
-  height: 192px;
+  border-radius: 10px;
+  width: 100%;
+  height: 230px;
 }
 
-.subdiv > .pic {
+.sachcontainer > .subdiv > .pic {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
 }
@@ -1024,3 +1041,46 @@ span,
   font-size: 30px;
 }
 /* bushra css end  */
+
+.Controller {
+  position: absolute;
+  font-size: 30px;
+  color: seagreen;
+  cursor: pointer;
+  left: 91%;
+  z-index: 1;
+}
+.Controller:nth-of-type(2) {
+  left: 94%;
+  text-align: right;
+}
+
+section {
+  width: 98%;
+  height: 180px;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+section::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.review > section {
+  height: 310px;
+  width: 98%;
+  justify-content: left;
+  overflow-x: auto;
+}
+.review section div {
+  height: 270px;
+  background: #f2fff8;
+  display: flex;
+  min-width: 270px;
+  position: relative;
+  text-align: center;
+  left: 0;
+  margin: 15px 5px 0px 20px;
+  transition: 0.5s;
+}
