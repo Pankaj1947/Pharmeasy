@@ -1,5 +1,5 @@
 # Pharmeasy
-Construct Week Project
+This is the Construct Week Group Project of PharmEasy clone using HTML CSS and JavaScript.
 
 TOPIC STATEMENT
 
